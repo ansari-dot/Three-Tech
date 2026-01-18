@@ -1,29 +1,37 @@
 {
-    "name": "three-tech",
+    "name": "shahsar-solutions-website",
     "version": "0.1.0",
     "private": true,
+    "type": "module",
     "scripts": {
-        "dev": "next dev --turbopack",
-        "build": "next build",
-        "start": "next start",
-        "lint": "eslint"
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
     },
     "dependencies": {
         "lenis": "^1.3.11",
         "lucide-react": "^0.542.0",
         "motion": "^12.23.12",
-        "next": "16.0.10",
-        "react": "19.2.1",
-        "react-dom": "19.2.1",
-        "react-fast-marquee": "^1.6.5"
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-fast-marquee": "^1.6.5",
+        "react-router-dom": "^7.1.5"
     },
     "devDependencies": {
-        "@eslint/eslintrc": "^3",
-        "@tailwindcss/postcss": "^4",
-        "@types/node": "^25.0.3",
-        "@types/react": "^19.2.7",
-        "eslint": "^9",
-        "eslint-config-next": "16.0.7",
-        "tailwindcss": "^4"
+        "@eslint/js": "^9.21.0",
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "@vitejs/plugin-react": "^4.3.4",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^9.21.0",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "eslint-plugin-react-refresh": "^0.4.19",
+        "globals": "^15.15.0",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^3.4.17",
+        "typescript": "~5.7.2",
+        "typescript-eslint": "^8.24.1",
+        "vite": "^7.0.6"
     }
 }

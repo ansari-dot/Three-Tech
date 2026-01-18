@@ -1,30 +1,28 @@
 {
     "compilerOptions": {
-        "target": "ES2017",
+        "target": "ES2020",
+        "useDefineForClassFields": true,
         "lib": [
-            "dom",
-            "dom.iterable",
-            "esnext"
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
         ],
-        "allowJs": true,
+        "module": "ESNext",
         "skipLibCheck": true,
-        "strict": true,
-        "noEmit": true,
-        "esModuleInterop": true,
-        "module": "esnext",
         "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
+        "noEmit": true,
         "jsx": "react-jsx",
-        "incremental": true,
-        "plugins": [
-            {
-                "name": "next"
-            }
-        ],
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
         "paths": {
             "@/*": [
-                "./*"
+                "./src/*"
             ]
         }
     },
@@ -34,9 +32,16 @@
         "**/*.tsx",
         ".next/types/**/*.ts",
         ".next/dev/types/**/*.ts",
-        "**/*.mts"
+        "**/*.mts",
+        "src"
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "vite.config.ts"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
     ]
 }

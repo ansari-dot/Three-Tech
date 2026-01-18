@@ -1,4 +1,4 @@
-# Three Tech - Software House
+# SHAHSAR SOLUTIONS - Software House
 
 Professional software development services for modern businesses.
 
@@ -28,5 +28,5 @@ npm run dev
 
 ## Contact
 
-Get in touch with Three Tech for your next project.
+Get in touch with SHAHSAR SOLUTIONS for your next project.
 
